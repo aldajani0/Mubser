@@ -58,9 +58,9 @@ Built to recognize frequently used Arabic words and phrases.
 
 ---
 
-# 🖥️ Backend — Flask API
+# 🖥️ Backend — Fast API
 
-The backend serves the trained models via a REST API, handling real-time inference requests from the frontend.
+The backend serves the trained models via a fast API, handling real-time inference requests from the frontend.
 
 **Location:** `/backend`
 
@@ -84,12 +84,6 @@ backend/
 ├── mubser_model.onnx              
 └── requirements.txt        
 ```
-
-### Key Components
-- **ONNX Models** — exported for fast inference  
-- **Flask Routes** — REST API endpoints  
-- **Database** — SQLite for history & interactions  
-- **SSL Support** — secure communication via HTTPS  
 
 ---
 
@@ -119,8 +113,8 @@ Mubser-Frontend/
 │   ├── TextToSign.tsx
 │   ├── Translator.tsx      
 │   └── WhyMubsir.tsx
-├── contexts/
-├── hooks/
+├── contexts/LanguageContext.tsx
+├── hooks/useTranslations.ts
 ├── App.tsx
 ├── index.html
 ├── index.tsx
@@ -143,7 +137,7 @@ Mubser-Frontend/
          │ HTTP/WebSocket
          ↓
 ┌─────────────────┐
-│  Flask Backend  │ ← Processes video frames
+│  fast API Backend  │ ← Processes video frames
 └────────┬────────┘
          │
          ↓
