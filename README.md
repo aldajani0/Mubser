@@ -26,8 +26,6 @@ This repository contains the full workflow — from data preparation to model tr
 
 Recognizes Arabic sign alphabet letters.
 
-**Dataset:**
-- [Arabic Sign Alphabet Dataset](https://www.kaggle.com/code/manarsabrii/arsl-words-based-acc-95/input)
 
 **Files:**
 - `Model 1 - Data Prep.ipynb` — cleaning, balancing, and preparing the dataset  
